@@ -1,0 +1,107 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Represents the main window of the application.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{class_main_window}{Main\+Window}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{class_main_window}{Main\+Window}} object and frees any resources used by it. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_main_window_aa0bac23742c8cc8921568928055719fa}{paint\+Event}} (QPaint\+Event $\ast$robo)
+\begin{DoxyCompactList}\small\item\em Overrides the paint\+Event function to draw graphics on the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the main window of the application. 
+
+This class inherits from QMain\+Window and provides a user interface for interacting with a sensor array connected to a serial port. The class includes several member functions and variables for handling user input, drawing graphics on the window, and communicating with the serial port to receive sensor readings. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{class_main_window}{Main\+Window}} object. 
+
+Constructor for the \mbox{\hyperlink{class_main_window}{Main\+Window}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & A pointer to the parent widget.\\
+\hline
+\end{DoxyParams}
+
+
+Initializes the user interface, sets up the progress bars and value labels, and opens the serial port.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget of the main window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{class_main_window}{Main\+Window}} object and frees any resources used by it. 
+
+Destructor for the \mbox{\hyperlink{class_main_window}{Main\+Window}} class.
+
+Closes the serial port and deletes the user interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_aa0bac23742c8cc8921568928055719fa}\label{class_main_window_aa0bac23742c8cc8921568928055719fa}} 
+\index{MainWindow@{MainWindow}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event $\ast$}]{robo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overrides the paint\+Event function to draw graphics on the window. 
+
+Paint event handler for the main window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robo} & A pointer to the paint event object.\\
+\hline
+\end{DoxyParams}
+
+
+Draws a simple robot shape using QPainter.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robo} & The paint event object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}
